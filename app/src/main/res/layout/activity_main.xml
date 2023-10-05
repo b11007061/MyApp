@@ -6,15 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="劉德華"
-        android:textColor="@color/design_default_color_error"
-        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
 
+    <Button
+        android:id="@+id/btHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/hi"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <TextView
+        android:id="@+id/tvR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btHi"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="@+id/btHi"
+        app:layout_constraintTop_toBottomOf="@+id/btHi" />
 </androidx.constraintlayout.widget.ConstraintLayout>
